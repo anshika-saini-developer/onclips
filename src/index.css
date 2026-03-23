@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-primary: #aa3bff;
+  --color-primary-light: #c084fc;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-50 text-zinc-900 antialiased h-screen w-screen overflow-hidden selection:bg-purple-200 selection:text-purple-900;
+  }
+}
