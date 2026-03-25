@@ -2,12 +2,15 @@
 
 @theme {
   --font-sans: "Inter", system-ui, sans-serif;
-  --color-primary: #aa3bff;
-  --color-primary-light: #c084fc;
+  --color-onclip-accent: #BA9668;
+  --color-onclip-accent-dark: #78583E;
+  --color-onclip-bg: #EAE8D7;
+  --color-onclip-bg-alt: #C5BDAA;
+  --color-onclip-text: #3E220F;
 }
 
 @layer base {
   body {
-    @apply bg-zinc-50 text-zinc-900 antialiased h-screen w-screen overflow-hidden selection:bg-purple-200 selection:text-purple-900;
+    @apply bg-onclip-bg text-onclip-text antialiased h-screen w-screen overflow-hidden selection:bg-onclip-accent/30 selection:text-onclip-text;
   }
 }
